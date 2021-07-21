@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Root/css/estilo.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <title>Contacto</title>
+  <meta name= "keywords" content= "Contacto, información, ciudadanía, Italiana">
+  <meta name = "description" content="Contactanos para acceder a tu ciudadanía, aprender italiano o para acceder a tours por cualquier lugar de italia.">
+</head>
+
+<body>
+  <header>
+    <nav class="nav navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <a class=" nav_logo navbar-brand" href="index.html">Viajando por Italia</a>
+      <button class=" navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav_enlaces navbar-nav mr-auto">
+          <li class="nav_enlaces-item nav-item ">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav_enlaces-item nav-item">
+            <a class="nav-link" href="./AprendeItaliano.html">Aprendé Italiano</a>
+          </li>
+          <li class="nav_enlaces-item nav-item">
+            <a class="nav-link" href="./Tours.html">Tours</a>
+          </li>
+          <li class="nav_enlaces-item nav-item">
+            <a class="nav-link" href="./Ciudadania.html">Ciudadanía</a>
+          </li>
+          <li class="nav_enlaces-item nav-item">
+            <a class="nav-link" href="./Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <hr>
+  <!-- coloque el nav dentro del header para poder transportarlo en las distintas paginas html-->
+  <main>
+    <Section class="paginaFormulario">
+
+      <div class="container formulario">
+        <form action="#" class="formulario__formularioContacto">
+          <div class="form-group">
+            <h4 class="formulario__formularioContacto-titulo">Contacto</h4>
+            <br>
+            <label class="formulario__formularioContacto-nombre" for="NombreApellido">Ingrese su Nombre y Apellido:
+            </label> <input type="text" name="NombreApellido" class="form-control">
+
+            <label class="formulario__formularioContacto-mail" for="Mail">Ingrese su Mail: </label> <input type="email"
+              name="Mail" class="form-control"><!-- class="rellenableFormulable" class="form-control"-->
+
+            <label class="formulario__formularioContacto-telefono" for="Telefono">Ingrese su Teléfono: </label> <input
+              type="number" name="Telefono" class="form-control">
+
+            <label class="formulario__formularioContacto-mensaje" for="Mensaje">Ingrese su Mensaje: </label>
+
+            <textarea class="formulario__formularioContacto-textoMensaje form-control" name="Mensaje" id="" cols="30"
+              rows="10" placeholder="Ingrese su mensaje"></textarea>
+            <br>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Comprar Cursos
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Comprar Gestoria Ciudadania
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Comprar Tours
+              </label>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn btn-default">
+          </div>
+
+
+
+        </form>
+      </div>
+    </Section>
+  </main>
+
+
+
+  <!-- Aca comienza el Footer-->
+  <footer class="footer">
+    <h6 class="footer__redes-texto">Seguinos en @viaggioperlitalia</h6>
+    <div class="footer__icons">
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

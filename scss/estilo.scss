@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Estilo del header*/
+
+//color enlaces
+$colorEnlaces: white;
+$tipografiaLogo: "Italianno", cursive;
+$tipografiaTexto: Arial, Helvetica, sans-serif;
+$tipografiaFooter: Arial, Helvetica, sans-serif;
+
+.nav {
+  .nav_logo {
+    color: #f1f0ec;
+  }
+
+  .nav__enlaces {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: $colorEnlaces;
+
+    .nav__enlaces-item {
+      @extend .nav__enlaces;
+    } //extend
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-collapse {
+  flex-grow: unset;
+  padding: 10px 50px;
+}
+.navbar-brand {
+  color: rgb(255, 255, 255);
+  font-family: "Italianno", cursive;
+  text-transform: capitalize;
+  font-size: 35px;
+  padding: 0 80px;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  margin: 5px 10px;
+}
+
+/*fin Estilo del header*/
+
+/*Estilo del Footer*/
+
+.footer {
+  background-color: black;
+  min-height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ffff;
+  box-shadow: 5px 0 10px black;
+
+  .footer__texto {
+    color: #ffffff;
+    font-style: arial;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: $tipografiaFooter;
+    text-align: center;
+    text-transform: initial;
+    line-height: 10px;
+    text-decoration: none;
+    letter-spacing: inherit;
+    margin: 20px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer__redes-texto {
+    color: #f1f0ec;
+    font-style: arial;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: $tipografiaFooter;
+    text-align: center;
+    text-transform: initial;
+    line-height: 10px;
+    text-decoration: none;
+    letter-spacing: inherit;
+    margin: 20px;
+  }
+  .bi {
+    font-size: 30px;
+    color: white;
+    margin: 0px 20px;
+  }
+}
+
+/*fin del footer*/
+
+/*Estilo del main Pagina Principal*/
+
+.mainIndex {
+  background-color: black;
+  margin-top: 5px;
+}
+
+// quinto BEM agregado
+.recuadro {
+  background-color: rgba(124, 124, 124,0.5);
+  border-radius: 5px;
+  .recuadro__titulo {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: $tipografiaTexto;
+    text-align: center;
+  }
+  // se puede usar extend
+  .recuadro__texto {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: $tipografiaTexto;
+    text-align: center;
+  }
+}
+
+/*fin del estilo main Pagina Principal*/
+
+/*Pagina Tours*/
+
+.grillaUno {
+  background-image: linear-gradient(rgb(51, 51, 51), black);
+  margin-top: 25px;
+}
+.galeriaFotografica {
+  .galeriaFotografica_fotografia-foto {
+    #fotos {
+      background-color: rgb(116, 116, 116);
+      border-radius: 5px;
+    }
+  }
+  .galeriaFotografica_fotografia-efecto {
+    transition: 1s ease all;
+    border-radius: 5%;
+  }
+  .galeriaFotografica_fotografia-efecto:hover {
+    transform: scale(1.05);
+  }
+}
+//probar a ver si hay que borrar maintour
+.mainTour {
+  background-color: rgb(12, 81, 150);
+  min-height: 500px;
+  
+}
+
+/*pagina ciudadania*/
+.conteiner-fluid{
+  padding: 15px;
+}
+
+.imagenCiudadania {
+  border-radius: 100%;
+}
+// aca hay posibilidad de un extend
+.paginaCiudadania2 {
+  background-attachment: inherit;
+  background-size: 100%;
+  min-height: 800px;
+} //probar a ver si hay que borrar
+.paginaCiudadania {
+  @extend .paginaCiudadania2;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+} //probar a ver si hay que borrar
+
+.tituloCiudadania {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: $tipografiaTexto;
+  text-align: center;
+  text-transform: initial;
+  text-decoration: none;
+  letter-spacing: inherit;
+  position: relative;
+}
+
+/*pagina Aprender Italiano*/
+.paginaAprenderItaliano {
+  margin-top: 25px;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+  min-height: 800px;
+  padding: 15px;
+
+  .video {
+    padding: 1px 1px;
+    width: 300px;
+    height: 300px;
+  }
+
+  @mixin titulos($colortitulos) {
+    color: $colortitulos;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: initial;
+    text-decoration: none;
+    letter-spacing: inherit;
+  }
+
+  h4 {
+    @include titulos(black);
+  }
+}
+  /* fin pagina aprender Italiano*/
+
+  /*pagina Contacto*/
+  .paginaFormulario {
+    // background-color: black;
+    background-image: url("../images/positano.jpg");
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100%;
+    min-height: 800px;
+    margin-top: 25px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .formulario {
+    display: inline-block;
+    .formulario__formularioContacto {
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+      background-color: rgba(182, 182, 182, 0.7);
+      display: inline-flexbox;
+      width: 30%; /* ancho */
+      height: 80%; /* alto */
+      text-align: inherit;
+      border-radius: 1%;
+      .formulario__formularioContacto-titulo {
+        color: rgb(44, 44, 44);
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: $tipografiaTexto;
+        text-align: center;
+        text-transform: initial;
+        text-decoration: none;
+        letter-spacing: inherit;
+      }
+      .formulario__formularioContacto-nombre {
+        padding: auto;
+      }
+      .formulario__formularioContacto-mail {
+        padding: auto;
+      }
+      .formulario__formularioContacto-telefono {
+        padding: auto;
+      }
+      .formulario__formularioContacto-mensaje {
+        padding: auto;
+      }
+    }
+  }
+

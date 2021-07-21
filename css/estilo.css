@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+/*Estilo del header*/
+.nav .nav_logo {
+  color: #f1f0ec; }
+
+.nav .nav__enlaces, .nav .nav__enlaces .nav__enlaces-item {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  color: white; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between; }
+
+.navbar-collapse {
+  flex-grow: unset;
+  padding: 10px 50px; }
+
+.navbar-brand {
+  color: white;
+  font-family: "Italianno", cursive;
+  text-transform: capitalize;
+  font-size: 35px;
+  padding: 0 80px;
+  font-weight: bold; }
+
+.navbar-dark .navbar-nav .nav-link {
+  margin: 5px 10px; }
+
+/*fin Estilo del header*/
+/*Estilo del Footer*/
+.footer {
+  background-color: black;
+  min-height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ffff;
+  box-shadow: 5px 0 10px black; }
+  .footer .footer__texto {
+    color: #ffffff;
+    font-style: arial;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: initial;
+    line-height: 10px;
+    text-decoration: none;
+    letter-spacing: inherit;
+    margin: 20px; }
+  .footer img {
+    width: 100%;
+    height: 100%; }
+  .footer .footer__redes-texto {
+    color: #f1f0ec;
+    font-style: arial;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: initial;
+    line-height: 10px;
+    text-decoration: none;
+    letter-spacing: inherit;
+    margin: 20px; }
+  .footer .bi {
+    font-size: 30px;
+    color: white;
+    margin: 0px 20px; }
+
+/*fin del footer*/
+/*Estilo del main Pagina Principal*/
+.mainIndex {
+  background-color: black;
+  margin-top: 5px; }
+
+.recuadro {
+  background-color: rgba(124, 124, 124, 0.5);
+  border-radius: 5px; }
+  .recuadro .recuadro__titulo {
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+  .recuadro .recuadro__texto {
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+
+/*fin del estilo main Pagina Principal*/
+/*Pagina Tours*/
+.grillaUno {
+  background-image: linear-gradient(#333333, black);
+  margin-top: 25px; }
+
+.galeriaFotografica .galeriaFotografica_fotografia-foto #fotos {
+  background-color: #747474;
+  border-radius: 5px; }
+
+.galeriaFotografica .galeriaFotografica_fotografia-efecto {
+  transition: 1s ease all;
+  border-radius: 5%; }
+
+.galeriaFotografica .galeriaFotografica_fotografia-efecto:hover {
+  transform: scale(1.05); }
+
+.mainTour {
+  background-color: #0c5196;
+  min-height: 500px; }
+
+/*pagina ciudadania*/
+.conteiner-fluid {
+  padding: 15px; }
+
+.imagenCiudadania {
+  border-radius: 100%; }
+
+.paginaCiudadania2, .paginaCiudadania {
+  background-attachment: inherit;
+  background-size: 100%;
+  min-height: 800px; }
+
+.paginaCiudadania {
+  background-repeat: no-repeat;
+  margin-top: 25px; }
+
+.tituloCiudadania {
+  color: black;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: initial;
+  text-decoration: none;
+  letter-spacing: inherit;
+  position: relative; }
+
+/*pagina Aprender Italiano*/
+.paginaAprenderItaliano {
+  margin-top: 25px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+  min-height: 800px;
+  padding: 15px; }
+  .paginaAprenderItaliano .video {
+    padding: 1px 1px;
+    width: 300px;
+    height: 300px; }
+  .paginaAprenderItaliano h4 {
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: initial;
+    text-decoration: none;
+    letter-spacing: inherit; }
+
+/* fin pagina aprender Italiano*/
+/*pagina Contacto*/
+.paginaFormulario {
+  background-image: url("../images/positano.jpg");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+  min-height: 800px;
+  margin-top: 25px;
+  height: 100%;
+  background-size: cover;
+  background-position: center; }
+
+.formulario {
+  display: inline-block; }
+  .formulario .formulario__formularioContacto {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(182, 182, 182, 0.7);
+    display: inline-flexbox;
+    width: 30%;
+    /* ancho */
+    height: 80%;
+    /* alto */
+    text-align: inherit;
+    border-radius: 1%; }
+    .formulario .formulario__formularioContacto .formulario__formularioContacto-titulo {
+      color: #2c2c2c;
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      text-transform: initial;
+      text-decoration: none;
+      letter-spacing: inherit; }
+    .formulario .formulario__formularioContacto .formulario__formularioContacto-nombre {
+      padding: auto; }
+    .formulario .formulario__formularioContacto .formulario__formularioContacto-mail {
+      padding: auto; }
+    .formulario .formulario__formularioContacto .formulario__formularioContacto-telefono {
+      padding: auto; }
+    .formulario .formulario__formularioContacto .formulario__formularioContacto-mensaje {
+      padding: auto; }

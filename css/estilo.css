@@ -104,6 +104,14 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; }
 
+.publicidad .publicidad__titulo {
+  color: white;
+  margin-top: 25px; }
+
+.publicidad .publicidad__texto {
+  color: white;
+  margin-top: 25px; }
+
 /*fin del estilo main Pagina Principal*/
 /*Pagina Tours*/
 .grillaUno {
@@ -120,6 +128,14 @@ img {
 
 .galeriaFotografica .galeriaFotografica_fotografia-efecto:hover {
   transform: scale(1.05); }
+
+.galeriaFotografica .galeriaFotografica_nombreCiudad {
+  color: white;
+  margin-top: 25px; }
+
+.galeriaFotografica .galeriaFotografica_descripcionCiudad {
+  color: white;
+  margin-top: 25px; }
 
 .mainTour {
   background-color: #0c5196;
@@ -191,7 +207,8 @@ img {
   background-position: center; }
 
 .formulario {
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 55px; }
   .formulario .formulario__formularioContacto {
     padding: 20px;
     margin: 20px;
@@ -222,3 +239,10 @@ img {
       padding: auto; }
     .formulario .formulario__formularioContacto .formulario__formularioContacto-mensaje {
       padding: auto; }
+
+@media only screen and (max-width: 768px) {
+  .formulario .formulario__formularioContacto {
+    width: 100%;
+    /* ancho */
+    height: 80%;
+    /* alto */ } }

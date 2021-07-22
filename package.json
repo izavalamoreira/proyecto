@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izavalamoreira/proyecto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/izavalamoreira/proyecto/issues"
+  },
+  "homepage": "https://github.com/izavalamoreira/proyecto#readme",
   "description": ""
 }

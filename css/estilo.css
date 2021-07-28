@@ -129,13 +129,16 @@ img {
 .galeriaFotografica .galeriaFotografica_fotografia-efecto:hover {
   transform: scale(1.05); }
 
-.galeriaFotografica .galeriaFotografica_nombreCiudad {
+.galeriaFotografica .galeriaFotografica_informacion .galeriaFotografica_nombreCiudad {
+  display: flex;
   color: white;
   margin-top: 25px; }
 
-.galeriaFotografica .galeriaFotografica_descripcionCiudad {
+.galeriaFotografica .galeriaFotografica_informacion .galeriaFotografica_descripcionCiudad {
   color: white;
-  margin-top: 25px; }
+  margin-top: 25px;
+  display: flex;
+  align-items: center; }
 
 .mainTour {
   background-color: #0c5196;
@@ -171,18 +174,21 @@ img {
 
 /*pagina Aprender Italiano*/
 .paginaAprenderItaliano {
-  margin-top: 25px;
+  margin-top: 52px;
   background-color: white;
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
   min-height: 800px;
-  padding: 15px; }
-  .paginaAprenderItaliano .video {
+  padding: 15px;
+  /*
+  .video {
     padding: 1px 1px;
     width: 300px;
-    height: 300px; }
+    height: 300px;
+  } */ }
   .paginaAprenderItaliano h4 {
+    margin-top: 25px;
     color: black;
     font-style: italic;
     font-weight: bolder;
@@ -241,6 +247,13 @@ img {
       padding: auto; }
 
 @media only screen and (max-width: 768px) {
+  .formulario .formulario__formularioContacto {
+    width: 100%;
+    /* ancho */
+    height: 80%;
+    /* alto */ } }
+
+@media only screen and (max-width: 600px) {
   .formulario .formulario__formularioContacto {
     width: 100%;
     /* ancho */

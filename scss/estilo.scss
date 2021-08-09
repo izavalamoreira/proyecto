@@ -34,25 +34,21 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
   }
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
 .navbar-collapse {
-  flex-grow: unset;
-  padding: 10px 50px;
-}
+  flex-grow: initial; }
+
+
 .navbar-brand {
   color: rgb(255, 255, 255);
   font-family: "Italianno", cursive;
   text-transform: capitalize;
-  font-size: 35px;
-  padding: 0 80px;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   margin: 5px 10px;
+  font-size: 1.2rem;
 }
 
 /*fin Estilo del header*/
@@ -62,7 +58,7 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 .footer {
   background-color: black;
   min-height: 75px;
-  width: 100vw;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -113,7 +109,6 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 
 .mainIndex {
   background-color: black;
-  margin-top: 5px;
 }
 
 // quinto BEM agregado
@@ -156,7 +151,7 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 
 .grillaUno {
   background-image: linear-gradient(rgb(51, 51, 51), black);
-  margin-top: 25px;
+
 }
 .galeriaFotografica {
   .galeriaFotografica_fotografia-foto {
@@ -199,10 +194,13 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 /*pagina ciudadania*/
 .conteiner-fluid{
   padding: 15px;
+  margin-top: 35px;
 }
 
 .imagenCiudadania {
   border-radius: 100%;
+  width:85%; 
+  height: 85%;
 }
 // aca hay posibilidad de un extend
 .paginaCiudadania2 {
@@ -231,19 +229,14 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 
 /*pagina Aprender Italiano*/
 .paginaAprenderItaliano {
-  margin-top: 52px;
+  margin-top: 12px;
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
   min-height: 800px;
   padding: 15px;
-  /*
-  .video {
-    padding: 1px 1px;
-    width: 300px;
-    height: 300px;
-  } */
+
 
   @mixin titulos($colortitulos) {
     color: $colortitulos;
@@ -266,13 +259,11 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 
   /*pagina Contacto*/
   .paginaFormulario {
-    // background-color: black;
     background-image: url("../images/positano.jpg");
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: 100%;
     min-height: 800px;
-    margin-top: 25px;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -280,7 +271,7 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 
   .formulario {
     display: inline-block;
-    margin-top: 55px;
+    margin-top: 10px;
     .formulario__formularioContacto {
       padding: 20px;
       margin: 20px;

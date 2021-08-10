@@ -96,6 +96,9 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; }
 
+.banner {
+  justify-content: center; }
+
 .publicidad .publicidad__titulo {
   color: white;
   margin-top: 20px; }

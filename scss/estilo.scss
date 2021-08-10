@@ -58,12 +58,11 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 .footer {
   background-color: black;
   min-height: 75px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #ffff;
-  box-shadow: 5px 0 10px black;
+
 
   .footer__texto {
     color: #ffffff;
@@ -110,6 +109,7 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 .mainIndex {
   background-color: black;
 }
+
 
 // quinto BEM agregado
 .recuadro {
@@ -194,7 +194,7 @@ $tipografiaFooter: Arial, Helvetica, sans-serif;
 /*pagina ciudadania*/
 .conteiner-fluid{
   padding: 15px;
-  margin-top: 35px;
+
 }
 
 .imagenCiudadania {

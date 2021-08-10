@@ -40,8 +40,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid #ffff;
-  box-shadow: 5px 0 10px black; }
+  border-bottom: 1px solid #ffff; }
   .footer .footer__texto {
     color: #ffffff;
     font-style: arial;
@@ -138,8 +137,7 @@ img {
 
 /*pagina ciudadania*/
 .conteiner-fluid {
-  padding: 15px;
-  margin-top: 35px; }
+  padding: 15px; }
 
 .imagenCiudadania {
   border-radius: 100%;
